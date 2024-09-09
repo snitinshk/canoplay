@@ -614,6 +614,20 @@ $('.button-group > button').on('click', function(event) {
 	event.preventDefault();
 });
 
+// $(document).ready(function() {
+// 	$('.main-menu ul li a').on('click', function(e) {
+// 	  e.preventDefault(); 
+// 	  var target = $(this).attr('href'); 
+// 	  var offset = 120; 
+// 	  var targetPosition = $(target).offset().top - offset; 
+  
+// 	  $('html, body').animate({
+// 		scrollTop: targetPosition
+// 	  }, 800); 
+// 	});
+//   });
+  
+
 // WOW active
 new WOW().init();
     
