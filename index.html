@@ -129,7 +129,7 @@
     <div class="offcanvas-overly"></div>
     <!-- offcanvas-end -->
     <!-- main-area -->
-    <main>
+    <main class="warpper">
         <!-- slider-area -->
         <section class="slider-area fix p-relative">
             <!-- slider-info-area -->
@@ -140,7 +140,10 @@
                 <div class="social">
                     <span>
                         <a href="#" title="Tiktok">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M448 209.9a210.1 210.1 0 0 1 -122.8-39.3V349.4A162.6 162.6 0 1 1 185 188.3V278.2a74.6 74.6 0 1 0 52.2 71.2V0l88 0a121.2 121.2 0 0 0 1.9 22.2h0A122.2 122.2 0 0 0 381 102.4a121.4 121.4 0 0 0 67 20.1z"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <path
+                                    d="M448 209.9a210.1 210.1 0 0 1 -122.8-39.3V349.4A162.6 162.6 0 1 1 185 188.3V278.2a74.6 74.6 0 1 0 52.2 71.2V0l88 0a121.2 121.2 0 0 0 1.9 22.2h0A122.2 122.2 0 0 0 381 102.4a121.4 121.4 0 0 0 67 20.1z" />
+                            </svg>
                         </a>
                         <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
                         <a href="#" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
@@ -341,12 +344,11 @@
                     </div>
                 </div>
             </div>
-
-
         </section>
         <!-- slider-area-end -->
         <!-- about-area -->
-        <section id="about" class="about-area about-p pt-120 pb-120 p-relative fix">
+        <section class="about-area about-p pt-120 pb-120 p-relative fix">
+            <div id="about" class="jubbox"></div>
             <div class="container">
                 <div class="row justify-content-center align-items-center">
                     <div class="col-lg-6 col-md-12 col-sm-12">
@@ -391,8 +393,8 @@
         <!-- about-area-end -->
 
         <!-- services-three-area -->
-        <section id="services" class="services-area services-bg  p-relative fix pt-120 pb-90"
-            style="background: #2b2c30;">
+        <section class="services-area services-bg  p-relative fix pt-120 pb-90" style="background: #2b2c30;">
+            <div id="services" class="jubbox"></div>
             <div class="container">
                 <div class="row justify-content-center align-items-center">
                     <div class="col-lg-12 col-md-12">
@@ -656,7 +658,8 @@
         </section>
         <!-- apartments-area-end -->
         <!-- video-area -->
-        <section id="video" class="video-area pb-120 p-relative fix">
+        <section class="video-area pb-120 p-relative fix">
+            <div id="video" class="jubbox"></div>
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-12">
@@ -795,7 +798,8 @@
         </div>
         <!-- counter-area-end -->
         <!-- apartments-area -->
-        <section id="apartment" class="apartments pt-120 pb-90  p-relative fix">
+        <section class="apartments pt-120 pb-90  p-relative fix">
+            <div id="apartment" class="jubbox"></div>
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-xl-8 col-lg-10">
@@ -932,7 +936,8 @@
         </section>
         <!-- apartments-area-end -->
         <!-- gallery-area -->
-        <section id="portfolio" class="pt-120 pb-170 fix" style="background: #2b2c30;">
+        <section class="pt-120 pb-170 fix" style="background: #2b2c30;">
+            <div id="portfolio" class="jubbox"></div>
             <div class="container">
                 <div class="portfolio ">
                     <div class="row align-items-center">
@@ -954,7 +959,7 @@
                             <div class="grid-item financial">
                                 <a class="popup-image" href="img/gallery/villa.png">
                                     <figure class="gallery-image">
-                                        <img src="img/gallery/villa.png" alt="img" class="img">
+                                        <div class="imgwrp"><img src="img/gallery/villa.png" alt="img" class="img"></div>
                                         <div class="price-tag">Villa</div>
                                         <figcaption>
                                             <span>Montenegro</span>
@@ -966,7 +971,7 @@
                             <div class="grid-item financial banking">
                                 <a class="popup-image" href="img/gallery/hotel.png">
                                     <figure class="gallery-image">
-                                        <img src="img/gallery/hotel.png" alt="img" class="img">
+                                        <div class="imgwrp"><img src="img/gallery/hotel.png" alt="img" class="img"></div>
                                         <div class="price-tag">Hotel</div>
                                         <figcaption>
                                             <span>Thailand</span>
@@ -978,7 +983,7 @@
                             <div class="grid-item insurance">
                                 <a class="popup-image" href="img/gallery/yacht.png">
                                     <figure class="gallery-image">
-                                        <img src="img/gallery/yacht.png" alt="img" class="img">
+                                        <div class="imgwrp"><img src="img/gallery/yacht.png" alt="img" class="img"></div>
                                         <div class="price-tag">Yacht</div>
                                         <figcaption>
                                             <span>Minorca</span>
@@ -990,7 +995,7 @@
                             <div class="grid-item insurance">
                                 <a class="popup-image" href="img/gallery/cruise.png">
                                     <figure class="gallery-image">
-                                        <img src="img/gallery/cruise.png" alt="img" class="img">
+                                        <div class="imgwrp"><img src="img/gallery/cruise.png" alt="img" class="img"></div>
                                         <div class="price-tag">Cruise</div>
                                         <figcaption>
                                             <span>Mexico</span>
@@ -1002,7 +1007,7 @@
                             <div class="grid-item insurance">
                                 <a class="popup-image" href="img/gallery/beachclub.png">
                                     <figure class="gallery-image">
-                                        <img src="img/gallery/beachclub.png" alt="img" class="img">
+                                        <div class="imgwrp"><img src="img/gallery/beachclub.png" alt="img" class="img"></div>
                                         <div class="price-tag">Beach</div>
                                         <figcaption>
                                             <span>Florida</span>
@@ -1410,7 +1415,8 @@
         </section>
         <!-- faq-aread-end -->
         <!-- team-area -->
-        <section id="team" class="team-area fix p-relative pt-120 pb-90" style="background: #2b2c30;">
+        <section class="team-area fix p-relative pt-120 pb-90" style="background: #2b2c30;">
+            <div id="team" class="jubbox"></div>
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
@@ -1517,7 +1523,8 @@
         </section>
         <!-- team-area-end -->
         <!-- contact-area -->
-        <section id="contact" class="contact-area after-none contact-bg pt-120 p-relative fix">
+        <section class="contact-area after-none contact-bg pt-120 p-relative fix">
+            <div id="contact" class="jubbox"></div>
             <div class="container">
 
                 <div class="row">
@@ -1529,7 +1536,8 @@
                             <h2>
                                 Get Early Notification
                             </h2>
-                            <p>If you are interested in being among the first to be notified of our official launch or product details, please contact us</p>
+                            <p>If you are interested in being among the first to be notified of our official launch or
+                                product details, please contact us</p>
                         </div>
 
                         <div class="contact-info">
@@ -1591,8 +1599,9 @@
         </section>
         <!-- contact-area-end -->
         <!-- testimonial-area -->
-        <section id="testimonial" class="testimonial-area pt-120 pb-90 p-relative fix"
+        <section class="testimonial-area pt-120 pb-90 p-relative fix"
             style="background-image: url(img/bg/testimonial-bg.png); background-size: cover;">
+            <div id="testimonial" class="jubbox"></div>
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
@@ -1715,7 +1724,8 @@
         <!-- testimonial-area-end -->
 
         <!-- blog-area -->
-        <section id="blog" class="blog-area p-relative fix pt-120 pb-90" style="background: #2b2c30;">
+        <section class="blog-area p-relative fix pt-120 pb-90" style="background: #2b2c30;">
+            <div id="blog" class="jubbox"></div>
             <div class="container">
                 <div class="row justify-content-center align-items-center">
                     <div class="col-lg-6 col-md-6">
@@ -1810,9 +1820,9 @@
                         <div class="footer-widget">
                             <div class="f-widget-title">
                                 <!-- <img src="img/logo/logo.png" alt="img"> -->
-                                 <div class="logo">
+                                <div class="logo">
                                     <a href="index.html">Canoplay<span>.</span></a>
-                                 </div>
+                                </div>
                             </div>
                         </div>
                     </div>

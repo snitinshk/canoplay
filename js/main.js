@@ -129,6 +129,8 @@ $('.services-active').slick({
 	dots: false,
 	infinite: true,
 	arrows: true,
+	autoplay:true,
+	autoplaySpeed:10000,
 	speed: 1000,
 	slidesToShow: 6,
 	slidesToScroll: 1,
@@ -343,7 +345,7 @@ $('.testimonial-active').slick({
 	infinite: true,
 	arrows: false,
     autoplay:true,
-  autoplaySpeed:1500,
+    autoplaySpeed:1500,
 	speed: 1000,
 	slidesToShow: 3,
 	slidesToScroll: 2,
@@ -614,18 +616,6 @@ $('.button-group > button').on('click', function(event) {
 	event.preventDefault();
 });
 
-// $(document).ready(function() {
-// 	$('.main-menu ul li a').on('click', function(e) {
-// 	  e.preventDefault(); 
-// 	  var target = $(this).attr('href'); 
-// 	  var offset = 120; 
-// 	  var targetPosition = $(target).offset().top - offset; 
-  
-// 	  $('html, body').animate({
-// 		scrollTop: targetPosition
-// 	  }, 800); 
-// 	});
-//   });
   
 
 // WOW active
