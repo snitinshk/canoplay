@@ -534,7 +534,7 @@
                         <div class="tab-content" id="myTabContent">
                             <div class="tab-pane fade show active" id="voverview" role="tabpanel">
                                 <div class="s-video-wrap iframe-container">
-                                    <iframe
+                                    <iframe id="video-hd"
                                         src="https://www.youtube.com/embed/zoKiCWj5iUk?autoplay=1&loop=1&mute=1&playlist=zoKiCWj5iUk"
                                         frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                                 </div>
@@ -542,14 +542,13 @@
                             <div class="tab-pane fade" id="degre" role="tabpanel">
                                 <div class="s-video-wrap">
                                     <div class="s-video-wrap iframe-container">
-                                        <iframe
+                                        <iframe id="video-360"
                                             src="https://www.youtube.com/embed/zoKiCWj5iUk?vq=small&autoplay=1&loop=1&mute=1&playlist=zoKiCWj5iUk"
                                             frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
                     </div>
                     <div class="col-lg-12">
                         <ul class="nav nav-tabs">
@@ -562,11 +561,9 @@
                                     role="tab">360<sup>0</sup> Video</span>
                             </li>
                             <li>
-                                <span id="contact-tab" data-bs-toggle="tab" data-bs-target="#vgallery" role="tab"
-                                    aria-controls="vgallery" aria-selected="false">Gallery</span>
+                                <a href="#portfolio" role="tab">Gallery</a>
                             </li>
                         </ul>
-
                     </div>
                 </div>
             </div>
@@ -689,7 +686,7 @@
                                             <li>Nearby <span class="after"> Hospital, School, Etc</span></li>
                                             <li>PRICE <span class="after"> 2500$/Month</span></li>
                                         </ul>
-                                        <a href="#skill" class="btn ss-btn smoth-scroll mt-30">get a free tour</a>
+                                        <a href="#contact" class="btn ss-btn smoth-scroll mt-30">LAUNCH NOTIFICATION</a>
                                     </div>
 
                                 </div>
@@ -713,7 +710,7 @@
                                             <li>Nearby <span class="after"> Hospital, School, Etc</span></li>
                                             <li>PRICE <span class="after"> 2500$/Month</span></li>
                                         </ul>
-                                        <a href="#skill" class="btn ss-btn smoth-scroll mt-30">get a free tour</a>
+                                        <a href="#contact" class="btn ss-btn smoth-scroll mt-30">LAUNCH NOTIFICATION</a>
                                     </div>
 
                                 </div>
@@ -736,7 +733,7 @@
                                             <li>Nearby <span class="after"> Hospital, School, Etc</span></li>
                                             <li>PRICE <span class="after"> 2500$/Month</span></li>
                                         </ul>
-                                        <a href="#skill" class="btn ss-btn smoth-scroll mt-30">get a free tour</a>
+                                        <a href="#contact" class="btn ss-btn smoth-scroll mt-30">LAUNCH NOTIFICATION</a>
                                     </div>
 
                                 </div>
@@ -758,7 +755,7 @@
                                             <li>Nearby <span class="after"> Hospital, School, Etc</span></li>
                                             <li>PRICE <span class="after"> 2500$/Month</span></li>
                                         </ul>
-                                        <a href="#skill" class="btn ss-btn smoth-scroll mt-30">get a free tour</a>
+                                        <a href="#contact" class="btn ss-btn smoth-scroll mt-30">LAUNCH NOTIFICATION</a>
                                     </div>
 
                                 </div>
@@ -902,7 +899,7 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-12 text-center">
-                        <p><strong>5000+</strong> active sponsors backed us</p>
+                        <p><strong>100+</strong> The above logos are experimental and will be removed. There is no association between these brands and Canoplay</p>
                     </div>
                 </div>
             </div>
@@ -1791,6 +1788,20 @@
     <script src="js/jquery.magnific-popup.min.js"></script>
     <script src="js/element-in-view.js"></script>
     <script src="js/main.js"></script>
+    
+    <script>
+        
+        document.getElementById('profile-tab').addEventListener('click', function() {
+            const video360 = document.getElementById('video-360');
+            video360.src = video360.src; 
+        });
+
+        document.getElementById('home-tab').addEventListener('click', function() {
+            const videoHd = document.getElementById('video-hd');
+            videoHd.src = videoHd.src;
+        });
+
+    </script>
 </body>
 
 </html>
