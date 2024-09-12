@@ -13445,9 +13445,11 @@ div.single-cta:last-child {
     font-weight: 600;
 }
 
-.logo a span {
-    color: #fac316;
+.logo .dot {
+    color: #fac316; /* Apply your desired color */
 }
+
+
 
 blockquote a,
 blockquote cite {
