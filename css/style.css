@@ -4553,7 +4553,7 @@ section:hover .section-title h2::before {
 
 .video-area li {
     display: inline-block;
-    margin: 50px 15px 0;
+    margin: 30px 15px 0;
 }
 
 .video-area li span,
@@ -13446,7 +13446,8 @@ div.single-cta:last-child {
 }
 
 .logo .dot {
-    color: #fac316; /* Apply your desired color */
+    color: #fac316;
+    /* Apply your desired color */
 }
 
 
@@ -13868,6 +13869,14 @@ header {
     padding-top: 80px;
 }
 
+.s-video-wrap.heightAdjust {
+    height: calc(100vh - 160px);
+    overflow: hidden;
+    width: 80vw;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
 .iframe-container {
     position: relative;
     padding-bottom: 56.25%;
@@ -13875,6 +13884,8 @@ header {
     overflow: hidden;
     max-width: 100%;
     background: #000;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .iframe-container iframe {
@@ -13883,6 +13894,7 @@ header {
     left: 0;
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 
 footer .contact-form .header-input {
@@ -13917,4 +13929,27 @@ footer .contact-form .header-input {
 .txtBack.left.top {
     left: -350px;
     top: -10px;
+}
+
+.homeSDMenu .f-widget-title h2 {
+    padding-bottom: 0;
+}
+
+.homeSDMenu .footer-link ul {
+    margin-top: 15px;
+}
+
+.homeSDMenu {
+    margin-top: 50px;
+}
+
+.footer-widget .popup-image {
+    width: 90px;
+    height: 90px;
+}
+
+.footer-widget .popup-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
