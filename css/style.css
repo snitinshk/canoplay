@@ -246,7 +246,8 @@ h6 {
 .dark .contact-field select,
 .dark .contact-field textarea {
     border: 1px solid #2b2c30;
-    background: #2b2c30
+    background: #2b2c30;
+    color: #fff
 }
 
 .dark .contact-field i {
