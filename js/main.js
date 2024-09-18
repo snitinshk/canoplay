@@ -669,3 +669,16 @@
     });
   }
 })(jQuery);
+
+
+//**Custom Js */
+
+document.getElementById('profile-tab').addEventListener('click', function () {
+  const video360 = document.getElementById('video-360');
+  video360.src = video360.src;
+});
+
+document.getElementById('home-tab').addEventListener('click', function () {
+  const videoHd = document.getElementById('video-hd');
+  videoHd.src = videoHd.src;
+});
