@@ -457,6 +457,8 @@
     infinite: true,
     arrows: true,
     speed: 1000,
+    autoplay: true,
+    autoplaySpeed: 5000,
     slidesToShow: 3,
     slidesToScroll: 1,
     prevArrow:
