@@ -5120,6 +5120,12 @@ section:hover .section-title h2::before {
     color: #f9c315;
 }
 
+.brd img {
+    width: 240px;
+    height: 240px;
+    object-fit: cover;
+}
+
 .single-team:hover .team-info {
     border-color: #f9c315;
 }
@@ -5899,6 +5905,7 @@ section:hover .section-title h2::before {
     color: #fff;
     padding: 20px 40px 40px 40px;
     font-size: 18px;
+    min-height: 175px;
 }
 
 .single-testimonial .review-icon {
