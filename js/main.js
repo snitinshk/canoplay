@@ -1,8 +1,8 @@
-(function($) {
+(function ($) {
   "use strict";
 
   // skill
-  $(".skill-per").each(function() {
+  $(".skill-per").each(function () {
     var $this = $(this);
     var id = $this.attr("id");
     $this.css("width", id + "%");
@@ -10,10 +10,10 @@
       { animatedValue: id },
       {
         duration: 1000,
-        step: function() {
+        step: function () {
           $this.attr("id", Math.floor(this.animatedValue) + "%");
         },
-        complete: function() {
+        complete: function () {
           $this.attr("id", Math.floor(this.animatedValue) + "%");
         }
       }
@@ -21,7 +21,7 @@
   });
 
   // sticky
-  $(window).on("scroll", function() {
+  $(window).on("scroll", function () {
     var scroll = $(window).scrollTop();
     if (scroll < 200) {
       $("#header-sticky").removeClass("sticky-menu");
@@ -31,7 +31,7 @@
   });
 
   // RESPONSIVE MENU
-  $(".responsive").on("click", function(e) {
+  $(".responsive").on("click", function (e) {
     $("#mobile-menu").slideToggle();
   });
 
@@ -41,33 +41,33 @@
     meanScreenWidth: "992"
   });
 
-  $(".info-bar").on("click", function() {
+  $(".info-bar").on("click", function () {
     $(".extra-info").addClass("info-open");
   });
 
-  $(".close-icon").on("click", function() {
+  $(".close-icon").on("click", function () {
     $(".extra-info").removeClass("info-open");
   });
 
   // offcanvas menu
-  $(".menu-tigger").on("click", function() {
+  $(".menu-tigger").on("click", function () {
     $(".offcanvas-menu,.offcanvas-overly").addClass("active");
     return false;
   });
-  $(".menu-close,.offcanvas-overly").on("click", function() {
+  $(".menu-close,.offcanvas-overly").on("click", function () {
     $(".offcanvas-menu,.offcanvas-overly").removeClass("active");
   });
 
   // menu toggle
-  $(".main-menu li a").on("click", function() {
+  $(".main-menu li a").on("click", function () {
     if ($(window).width() < 700) {
       $("#mobile-menu").slideUp();
     }
   });
 
   // smoth scroll
-  $(function() {
-    $("a.smoth-scroll").on("click", function(event) {
+  $(function () {
+    $("a.smoth-scroll").on("click", function (event) {
       var $anchor = $(this);
       $("html, body").stop().animate(
         {
@@ -82,13 +82,13 @@
   // mainSlider
   function mainSlider() {
     var BasicSlider = $(".slider-active");
-    BasicSlider.on("init", function(e, slick) {
+    BasicSlider.on("init", function (e, slick) {
       var $firstAnimatingElements = $(".single-slider:first-child").find(
         "[data-animation]"
       );
       doAnimations($firstAnimatingElements);
     });
-    BasicSlider.on("beforeChange", function(e, slick, currentSlide, nextSlide) {
+    BasicSlider.on("beforeChange", function (e, slick, currentSlide, nextSlide) {
       var $animatingElements = $(
         '.single-slider[data-slick-index="' + nextSlide + '"]'
       ).find("[data-animation]");
@@ -105,14 +105,14 @@
       nextArrow:
         '<button type="button" class="slick-next"><i class="fal fa-arrow-right"></i></button>',
       responsive: [
-        { breakpoint: 1200, settings: { dots: false, arrows: false } }
+        { breakpoint: 1200, settings: { dots: true, arrows: true } }
       ]
     });
 
     function doAnimations(elements) {
       var animationEndEvents =
         "webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend";
-      elements.each(function() {
+      elements.each(function () {
         var $this = $(this);
         var $animationDelay = $this.data("delay");
         var $animationType = "animated " + $this.data("animation");
@@ -120,7 +120,7 @@
           "animation-delay": $animationDelay,
           "-webkit-animation-delay": $animationDelay
         });
-        $this.addClass($animationType).one(animationEndEvents, function() {
+        $this.addClass($animationType).one(animationEndEvents, function () {
           $this.removeClass($animationType);
         });
       });
@@ -304,8 +304,8 @@
   $(".brand-active").slick({
     dots: false,
     infinite: true,
-    // autoplay: true,
-    // autoplaySpeed: 1500,
+    autoplay: true,
+    autoplaySpeed: 1500,
     arrows: false,
     speed: 1000,
     slidesToShow: 4,
@@ -330,7 +330,7 @@
       {
         breakpoint: 992,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 2,
           slidesToScroll: 1
         }
       },
@@ -581,7 +581,7 @@
   parallaxMouse();
 
   // service active
-  $(".s-single-services").on("mouseenter", function() {
+  $(".s-single-services").on("mouseenter", function () {
     $(this)
       .addClass("active")
       .parent()
@@ -603,7 +603,7 @@
   });
 
   // isotop
-  $(".grid").imagesLoaded(function() {
+  $(".grid").imagesLoaded(function () {
     // init Isotope
     var $grid = $(".grid").isotope({
       itemSelector: ".grid-item",
@@ -615,13 +615,13 @@
     });
 
     // filter items on button click
-    $(".button-group").on("click", "button", function() {
+    $(".button-group").on("click", "button", function () {
       var filterValue = $(this).attr("data-filter");
       $grid.isotope({ filter: filterValue });
     });
   });
   // isotop
-  $(".element").each(function() {
+  $(".element").each(function () {
     var a = $(this);
     a.typed({
       strings: a.attr("data-elements").split(","),
@@ -629,18 +629,18 @@
       backDelay: 3e3
     });
   }), //for menu active class
-  $(".button-group > button").on("click", function(event) {
-    $(this).siblings(".active").removeClass("active");
-    $(this).addClass("active");
-    event.preventDefault();
-  });
+    $(".button-group > button").on("click", function (event) {
+      $(this).siblings(".active").removeClass("active");
+      $(this).addClass("active");
+      event.preventDefault();
+    });
 
   // WOW active
   new WOW().init();
 
   //Tabs Box
   if ($(".tabs-box").length) {
-    $(".tabs-box .tab-buttons .tab-btn").on("click", function(e) {
+    $(".tabs-box .tab-buttons .tab-btn").on("click", function (e) {
       e.preventDefault();
       var target = $($(this).attr("data-tab"));
 
