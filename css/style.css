@@ -24,6 +24,78 @@
 */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+@font-face {
+    font-family: 'didotregular';
+    src: url('../fonts/didot-webfont.woff2') format('woff2'),
+        url('../fonts/didot-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'angsana_newregular';
+    src: url('../fonts/angsa-webfont.woff2') format('woff2'),
+        url('../fonts/angsa-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Futura';
+    src: url('../fonts/Futura-Bold.woff2') format('woff2'),
+        url('../fonts/Futura-Bold.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Futura Bk BT';
+    src: url('../fonts/FuturaBT-Book.woff2') format('woff2'),
+        url('../fonts/FuturaBT-Book.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Avenir Next LT Pro';
+    src: url('../fonts/AvenirNextLTPro-Bold.woff2') format('woff2'),
+        url('../fonts/AvenirNextLTPro-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gill Sans';
+    src: url('../fonts/GillSans.woff2') format('woff2'),
+        url('../fonts/GillSans.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'OPTICopperplate';
+    src: url('../fonts/OPTICopperplate.woff2') format('woff2'),
+        url('../fonts/OPTICopperplate.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Abadi MT Std';
+    src: url('../fonts/AbadiMTStd.woff2') format('woff2'),
+        url('../fonts/AbadiMTStd.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
 /* 1. Theme default css */
 
 html,
@@ -13984,7 +14056,7 @@ footer .contact-form .header-input {
 
 }
 
-.slider-bg.slick-active .sldImg img{
+.slider-bg.slick-active .sldImg img {
     animation: zoomPan 30s ease-in-out infinite;
 }
 
@@ -14009,3 +14081,58 @@ footer .contact-form .header-input {
         transform: scale(1) translate(0, 0);
     }
 }
+
+.textLogo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    color: #000000;
+}
+
+.strGulf {
+    font-family: 'didotregular';
+    font-size: 48px;
+}
+
+.bulgaria {
+    font-family: 'didotregular';
+    font-size: 36px;
+}
+
+.xlv {
+    font-family: 'angsana_newregular';
+    font-size: 72px;
+}
+
+.hlth {
+    font-family: 'angsana_newregular';
+    font-size: 72px;
+}
+
+.tomF {
+    font-family: 'Futura Bk BT';
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.knott {
+    font-family: 'Avenir Next LT Pro';
+    font-size: 36px;
+}
+
+.atsCli{
+    font-family: 'Gill Sans';
+    font-size: 48px;
+    position: relative;
+    top: 7px;
+}
+.fuggti{
+    font-family: 'OPTICopperplate';
+    font-size: 48px;
+}
+.svdt{
+    font-family: 'Abadi MT Std';
+    font-size: 48px;
+}
+    

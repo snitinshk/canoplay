@@ -304,11 +304,11 @@
   $(".brand-active").slick({
     dots: false,
     infinite: true,
-    autoplay: true,
-    autoplaySpeed: 1500,
+    // autoplay: true,
+    // autoplaySpeed: 1500,
     arrows: false,
     speed: 1000,
-    slidesToShow: 5,
+    slidesToShow: 4,
     slidesToScroll: 2,
     responsive: [
       {
