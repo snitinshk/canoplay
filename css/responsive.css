@@ -3499,4 +3499,13 @@
     .slider-btn .rating {
         display: block;
     }
+    .mean-container a.meanmenu-reveal {
+        top: 0px;
+    }
+    .video-area ul {
+        gap: 15px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }

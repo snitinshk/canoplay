@@ -1169,7 +1169,7 @@ label {
 }
 
 .right-menu .text strong {
-    color: #f9c315;
+    color: #f9c315 !important;
     font-size: 22px;
     font-weight: 600;
     font-family: 'Poppins', sans-serif;
