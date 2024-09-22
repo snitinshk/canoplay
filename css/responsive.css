@@ -3443,6 +3443,14 @@
     .gallery-image img {
         width: 100% !important;
     }
+
+    .single-testimonial p {
+        padding: 20px 30px 40px 30px;
+    }
+
+    .single-testimonial .review-icon {
+        padding-left: 30px;
+    }
 }
 
 @media (max-width: 800px) {
@@ -3471,14 +3479,24 @@
     .s-video-wrap.heightAdjust {
         height: 346px;
     }
+
     .slider-content {
         left: 10px;
     }
 
+    .services-icon img {
+        width: auto !important;
+    }
+
+
 }
 
 @media (max-width: 676px) {
-.s-video-wrap.heightAdjust {
-    height: 316px;
-}
+    .s-video-wrap.heightAdjust {
+        height: 316px;
+    }
+
+    .slider-btn .rating {
+        display: block;
+    }
 }
