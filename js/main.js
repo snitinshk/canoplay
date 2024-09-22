@@ -356,7 +356,7 @@
     dots: false,
     infinite: true,
     arrows: false,
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 1500,
     speed: 1000,
     slidesToShow: 3,
