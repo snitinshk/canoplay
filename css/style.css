@@ -6374,6 +6374,10 @@ section:hover .section-title h2::before {
     display: inline-block;
 }
 
+.tesimonial-text p{
+    /* font-size: 16px; */
+}
+
 /* faq */
 .faq-area .section-title h2 {
     color: #fff;
