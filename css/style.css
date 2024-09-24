@@ -6374,7 +6374,7 @@ section:hover .section-title h2::before {
     display: inline-block;
 }
 
-.tesimonial-text p{
+.tesimonial-text p {
     /* font-size: 16px; */
 }
 
@@ -14125,18 +14125,42 @@ footer .contact-form .header-input {
     font-size: 36px;
 }
 
-.atsCli{
+.atsCli {
     font-family: 'Gill Sans';
     font-size: 48px;
     position: relative;
     top: 7px;
 }
-.fuggti{
+
+.fuggti {
     font-family: 'OPTICopperplate';
     font-size: 48px;
 }
-.svdt{
+
+.svdt {
     font-family: 'Abadi MT Std';
     font-size: 48px;
 }
-    
+
+.abtcan {
+    color: #222327;
+    -webkit-text-fill-color: #222327;
+}
+
+.txtBack.right.bottom.abtcan {
+    right: -30vw;
+    bottom: 40px;
+    z-index: -1;
+}
+
+.txtBack.left.top.crvt {
+    left: -50vw;
+    top: 20px;
+}
+.txtBack.center.bottom.blgcnp {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+    bottom: -30px;
+}
